@@ -3,21 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
     <title>Image to PDF</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="app">
-        <h1>🖼️ Image to PDF</h1>
-        <label class="file-input">
-            📁 Select Images
-            <input type="file" id="imageInput" accept="image/*" multiple required>
-        </label>
-        <button id="convertBtn" disabled>Convert to PDF</button>
-        <div id="preview"></div>
-        <div id="status"></div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
-    <script src="script.js"></script>
+<!-- MAIN APP -->
+<div class="app">
+    <h1>🖼️ Image to PDF</h1>
+
+    <label class="file-input">
+        📁 Select Images
+        <input type="file" id="imageInput" accept="image/*" multiple>
+    </label>
+
+    <button id="convertBtn" disabled>Convert to PDF</button>
+
+    <div id="preview"></div>
+    <div id="status"></div>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="script.js"></script>
+
 </body>
 </html>
