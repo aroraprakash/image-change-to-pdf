@@ -3,17 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="manifest" href="/site.webmanifest">
+
     <title>Image to PDF</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<!-- MAIN APP -->
 <div class="app">
     <h1>🖼️ Image to PDF</h1>
-
-    <div style="text-align: center; margin: 15px auto; width: 100%; max-width: 728px; height: 90px; background-color: #f9f9f9; border: 1px dashed #bbb; display: flex; align-items: center; justify-content: center; border-radius: 5px;">
-        <span style="color: #888; font-family: Arial; font-size: 12px; letter-spacing: 1px;">ADVERTISEMENT</span>
-    </div>
 
     <label class="file-input">
         📁 Select Images
@@ -21,6 +18,10 @@
     </label>
 
     <button id="convertBtn" disabled>Convert to PDF</button>
+  
+  <div style="text-align: center; margin: 15px auto; width: 100%; max-width: 728px; height: 90px; background-color: #f9f9f9; border: 1px dashed #bbb; display: flex; align-items: center; justify-content: center; border-radius: 5px;">
+    <span style="color: #888; font-family: Arial; font-size: 12px; letter-spacing: 1px;">ADVERTISEMENT</span>
+</div>
 
     <div id="preview"></div>
     <div id="status"></div>
